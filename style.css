@@ -33,7 +33,7 @@
 }
 .text-center{
   text-align: center;
-  margin-top: 23vh;
+  margin-top: 20vh;
 }
 #my-name {
   color: white;
@@ -44,11 +44,14 @@
 .social-icon ul li a i {
   text-decoration: none;
   color: white;
-  margin: 0 25px 25px 0;
+  margin: 0px 25px 25px 0;
   padding: 15px;
   margin-top: 15px;
   list-style: none;
   border-radius: 50%;
+}
+.social-icon{
+  margin-top: 15px;
 }
 #body-header ul li {
   list-style: none;
