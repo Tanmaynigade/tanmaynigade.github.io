@@ -494,3 +494,138 @@ button:focus {
 #t2{
   margin-top: 5vh;
 }
+
+#heading-of-experience{
+  font-size: 40px;
+  color: blue;
+  padding-top: 15px;
+  margin-bottom: 10vh;
+}
+
+
+.experience-list{
+  height: 25%;
+  width: 30%;
+}
+
+.experience-list:nth-child(2n){
+  margin-right: 40vw;
+  
+}
+.experience-list:nth-child(2n+1){
+  margin-left: 40vw;
+}
+#experience{
+  height: 100vh;
+}
+#education{
+  height: 130vh;
+}
+.experience-list h3,h4,h5{
+     text-align: right;
+    margin: 5px;
+    font-size: larger;
+}
+.experience-list h3{
+  color: blue;
+}
+.experience-list h4{
+  color: orange;
+}
+
+#timeline-of-experience{
+  height: 60vh;
+  width: 0;
+  border:2px dotted rgb(84, 181, 213);
+  position: absolute;
+  margin-top: 25vh;
+}
+#planeimg{
+  transform: rotate(180deg);
+  font-size:xx-large;
+  position: sticky;
+  top:25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #sscimg::before{
+  content: '';
+  display: inline-block;
+  height: 67px;
+  width: 67px;
+  background-size: contain;
+  background-image: url(hsc.jpg);
+  border-radius: 50%;
+  position:absolute;
+  right: 40vw;
+}
+#hscimg::before{
+  content: '';
+  display: inline-block;
+  height: 67px;
+  width: 67px;
+  background-size: contain;
+  background-image: url(hsc.jpg);
+  border-radius: 50%;
+  position:absolute;
+  right: 80vw;
+}
+#sppuimg::before{
+  content: '';
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  background-size: contain;
+  background-image: url(sppuimg.webp);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  position:absolute;
+  right: 41vw;
+}
+#dishtvimg::before{
+  content: '';
+  display: inline-block;
+  height: 80px;
+  width: 100px;
+  background-size: contain;
+  background-image: url(distvimg.png);
+  display: flex;
+  position: absolute;
+  right: 78vw;
+  background-repeat: no-repeat;
+  
+}
+
+#timeline-of-education{
+  height: 83vh;
+  width: 0;
+  border:2px dotted rgb(84, 181, 213);
+  position: absolute;
+  margin-top: 25vh;
+}
+
+#bikeimg{
+  rotate: 90deg;
+  font-size:xx-large;
+  position: sticky;
+  top:25vh;
+  right: 5px;
+}
+#all-dot{
+  height: 80vh;
+  width: auto;
+}
+
+#dot1{
+  border-radius: 50%;
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: #989882;
+  margin-bottom: 40vh;
+}
+
+
+ 
