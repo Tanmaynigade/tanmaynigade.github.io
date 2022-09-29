@@ -613,20 +613,6 @@ button:focus {
   top:25vh;
   right: 5px;
 }
-#all-dot{
-  height: 80vh;
-  width: auto;
-}
-
-#dot1{
-  border-radius: 50%;
-  position: absolute;
-  height: 0.5rem;
-  width: 0.5rem;
-  background-color: #989882;
-  margin-bottom: 40vh;
-}
-
 
 @media only screen and (max-width:1270px) {
   #portfolio{
@@ -649,7 +635,28 @@ button:focus {
   height: auto;
 }
 #experience{
-  height: 160vh;
+  height: auto;
 }
 }
- 
+
+@media only  screen  and (max-width:560px) {
+      #timeline-of-experience{
+        left: 5%;
+      }
+      #timeline-of-education{
+        left: 5%;
+      }
+       
+      .experience-list{
+        height: 80%;
+        width: 80%;
+      }
+      .experience-list:nth-child(2n){
+        margin-left: 35vw;
+        margin-bottom: 10vh;
+      }
+      .experience-list:nth-child(2n+1){
+        margin-right: 35vw;
+        margin-bottom: 10vh;
+      }
+}
