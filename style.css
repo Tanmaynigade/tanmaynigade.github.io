@@ -374,9 +374,9 @@ section:nth-child(2n+1){
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
     color: white;
     padding-bottom: 40px;
-    padding:5vh;
     font-weight: 700;
     font-size:x-large;
+    
 }
 
 #contact h1,
@@ -450,9 +450,7 @@ textarea {
   line-height: 1.6;
   font-size: 1.05rem;
 }
-#contact{
-  width: 91vw;
-}
+
 
 #contact-form button[type="submit"]{
   background: transparent;
