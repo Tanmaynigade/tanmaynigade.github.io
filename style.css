@@ -266,7 +266,7 @@ section:nth-child(2n+1){
   width: 12rem;
   border-radius: 20px 20px 20px 20px;
   font-size: 25px;
- color: white;
+ color:white;
  padding: 2px 0 2px 15px;
    
 }
@@ -451,7 +451,7 @@ textarea {
   font-size: 1.05rem;
 }
 
-#contact-form button[type="submit"] {
+#contact-form button[type="submit"]{
   background: transparent;
   font-size: 0.95rem;
   border: 2px solid white;
@@ -628,4 +628,28 @@ button:focus {
 }
 
 
+@media screen and (max-width:1270px) {
+  #portfolio{
+
+      height: auto;
+  }
+  #Skill{
+    height: auto;
+  }
+}
+@media screen and (max-width:666px) {
+ #Skill{
+  height: auto;
+ }
+
+}
+
+@media  screen and (max-width:640px) {
+#education{
+  height: auto;
+}
+#experience{
+  height: 160vh;
+}
+}
  
