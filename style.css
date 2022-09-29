@@ -450,6 +450,9 @@ textarea {
   line-height: 1.6;
   font-size: 1.05rem;
 }
+#contact{
+  width: 95.4vw;
+}
 
 #contact-form button[type="submit"]{
   background: transparent;
