@@ -628,7 +628,7 @@ button:focus {
 }
 
 
-@media screen and (max-width:1270px) {
+@media only screen and (max-width:1270px) {
   #portfolio{
 
       height: auto;
@@ -637,14 +637,14 @@ button:focus {
     height: auto;
   }
 }
-@media screen and (max-width:666px) {
+@media only screen and (max-width:666px) {
  #Skill{
   height: auto;
  }
 
 }
 
-@media  screen and (max-width:640px) {
+@media only  screen  and (max-width:640px) {
 #education{
   height: auto;
 }
