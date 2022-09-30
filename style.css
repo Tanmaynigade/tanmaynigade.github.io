@@ -50,6 +50,7 @@
   list-style: none;
   border-radius: 50%;
 }
+
 .social-icon{
   margin-top: 15px;
 }
@@ -87,6 +88,9 @@
 #my-details {
   margin: 5vh 20vw 8vh 20vw;
 }
+.text-highlight{
+  color: blue;
+}
 section {
   height: 65vh;
   width: 100%;
@@ -103,6 +107,7 @@ section:nth-child(2n){
 section:nth-child(2n+1){
   background-color: white;
 }
+
 
 /* .....................................................Skill....................... */
 
@@ -373,16 +378,18 @@ section:nth-child(2n+1){
 
   #contact {
     background-color: #0abcf9;
-    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 75%);
     color: white;
-    font-weight: 700;
-    font-size:x-large;
+    font-weight: 300;
+    font-size:large;
     
 }
 
 #contact h1,
 #contact h1 span {
     color: white;
+    margin-top: 5vh;
+    font-size: xx-large;
 }
 
 
@@ -393,7 +400,17 @@ section:nth-child(2n+1){
 #contact-container {
   display: flex;
 }
-
+#get-in-touch h4{
+   margin-right: 13vw;
+   margin-bottom: 2vh;
+}
+#get-in-touch p{     
+  margin-bottom: 2vh;
+        
+}
+#my-address h3{
+  margin-bottom: 2vh;
+}
 #my-details-container {
   width: 35%;
   margin-left: 6%;
@@ -445,7 +462,7 @@ textarea {
   padding: 4px 10px;
   border: 0px solid transparent;
   border-bottom: 2px solid white;
-  color: #d9dcdd;
+  color: #f1d91f;
   background: transparent;
   width: 90%;
   line-height: 1.6;
@@ -497,6 +514,12 @@ button:focus {
   margin-top: 5vh;
 }
 
+#contact{
+  height: auto;
+}
+.social-icon ul li{
+  list-style: none;
+}
 /* ...............................................Work experience.................. */
 
 #heading-of-experience{
@@ -717,6 +740,8 @@ button:focus {
       }
 }
 
+/* ........................................Responsive................ */
+
 @media only  screen  and (max-width:352px) {
   #heading-of-experience{
     font-size: 7vw;
@@ -726,7 +751,6 @@ button:focus {
   }
   
 }
- /* hr.............................................................. */
 
  #icon-bar-nav-menu{
     position: absolute;
@@ -761,8 +785,7 @@ button:focus {
   top: 1vh;
   right: -24%;
   background-color: gray;
-  
-  
+
 }
 @media only screen and (max-width: 600px) {
    #bar-icon{
@@ -791,13 +814,45 @@ button:focus {
     top: 1vh;
     right: 5%;
     background-color: gray;
-    display: none;
-    
-    
+    display: none;  
  }
 
  #click:checked ~ #icon-bar-nav-menu{
     display: block;
     
  }
+
+ #contact-form {
+      margin-left: 0%;
+    }
+  
+    #contact-container {
+      flex-direction: column;
+    }
+  
+    #contact-form-container,
+    #my-details-container {
+      width: 80%;
+      margin: 10%;
+    }
+ 
+    #get-in-touch{
+       margin-right:55vw;
+    }
+    #get-in-touch p{
+      margin-left:5vw;
+   }
+
+   #my-address{
+    margin-left:5vw;
+   }
+   .my-details-info-container{
+    margin-left:5vw;
+   }
+
+   .portfolio-container{
+    margin-right: 10vw;
+   }
+
 }
+
