@@ -719,3 +719,67 @@ button:focus {
   }
   
 }
+ /* hr.............................................................. */
+
+ #icon-bar-nav-menu{
+    position: absolute;
+    display: none;
+
+ }
+ #icon-bar-nav-menu ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 10px 25px 25px 10px;
+  transition: color 0.5s;
+  font-size: 15px;
+  font-family: "Oswald", sans-serif;
+  
+ }
+ #icon-bar-nav-menu ul li a:hover {
+  color: lightblue;
+  border-bottom: 1px solid white;
+}
+#bar-icon{
+  position: absolute;
+  height: 5vh;
+  width: 5vw;
+  display: none;
+}
+#click{
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+   #bar-icon{
+    position: absolute;
+    display: inherit;
+    right: 0%;
+    margin: 5vw;
+   }
+
+   #bar-icon i {
+         font-size:xx-large;
+         color: white;
+        
+   }
+   #horizontal-list{
+    display: none;
+   }
+   
+   
+   #icon-bar-nav-menu {
+    position: absolute;
+    display: inherit;
+    margin:6vh 0.2vw;
+    top: 1vh;
+    right: -100%;
+    background-color: gray;
+    
+ }
+
+ #click:checked ~ #icon-bar-nav-menu{
+    right: 5%;
+ }
+ 
+
+  
+}
