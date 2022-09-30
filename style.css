@@ -771,13 +771,14 @@ button:focus {
     display: inherit;
     margin:6vh 0.2vw;
     top: 1vh;
-    right: -100%;
+    right: 5%;
+     display: none;
     background-color: gray;
     
  }
 
  #click:checked ~ #icon-bar-nav-menu{
-    right: 5%;
+    display: block;
  }
  
 
