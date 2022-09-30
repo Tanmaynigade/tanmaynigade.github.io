@@ -1,327 +1,721 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tanmay Nigade</title>
-  <link rel="stylesheet" href="style.css">
+* {
+  margin: 0;
+  padding: 0;
+}
+#body-header {
+  height:65vh;
+  background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+#horizontal-list ul li {
+  display: inline-block;
+}
+#horizontal-list ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 25px 25px 0;
+  transition: color 0.5s;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+}
+#horizontal-list {
+  text-align: center;
+}
+#horizontal-list ul li a:hover {
+  color: lightblue;
+  border-bottom: 1px solid white;
+}
+.text-center{
+  text-align: center;
+  margin-top: 20vh;
+}
+#my-name {
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+}
+.social-icon ul li a i {
+  text-decoration: none;
+  color: white;
+  margin: 0px 25px 25px 0;
+  padding: 15px;
+  margin-top: 15px;
+  list-style: none;
+  border-radius: 50%;
+}
+.social-icon{
+  margin-top: 15px;
+}
+#body-header ul li {
+  list-style: none;
+}
+.social-icon ul li a i:hover {
+  box-shadow: 0px 0px 6px 4px white;
+}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+#about {
+  height: auto;
+  width: 100%;
+  
+}
+.my-image {
+  margin-top: -15vh;
+  position: relative;
+  height: 14rem;
+  width: 14rem;
+  margin: auto;
+  margin-top: -15vh;
+}
+.my-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 1px black;
+}
+.my-image img:hover {
+  box-shadow: 0px 0px 10px 1px rgba(55, 35, 35, 0.848);
+}
+#my-details {
+  margin: 5vh 20vw 8vh 20vw;
+}
+section {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
 
-<body>
-  <header id="body-header">
-    <nav>
-      <div id="horizontal-list">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#my-details">About</a></li>
-          <li><a href="#Skill">Skill</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="text-center">
-      <h1 id="my-name">Tanmay Nigade</h1>
-      <div class="social-icon">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/tanmay-nigade-96a501233/">
-              <i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/tanmay.nigade.9"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://mail.google.com/mail/u/0/#sent"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.quora.com/profile/Tanmay-Nigade-4"><i class="fa-brands fa-quora"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <main>
+section:nth-child(2n){
+  background-color: #edecec;
+  
+} 
+section:nth-child(2n+1){
+  background-color: white;
+}
 
-    <section id="about">
-      <div class="my-image">
-        <img src="myimg.png" alt="Image not found" />
-      </div>
-      <p id="my-details">
-        An BSC in Computor Science Student. Interested in Coding and Web Development. Highly enthusiastic about work and
-        tasks ahead. I am committed to learning and self-development so that I can consistently achieve better results.
-      </p>
+/* now start skill section */
 
-    </section>
+#skill{
+  height: auto;
+}
+.section-heading{
+  width: auto;
+  padding: 20px 10px 10px;
+  font-weight: 400;
+ 
+}
 
-    <section id="Skill">
+.section-heading span{
+  font-size: 45px;
+  color: blue;
+  display: inline-block;
+  padding-top: 10px;
+  margin-right: 0.5rem;
+  margin: auto auto 11vh auto;
+  
+  
+}
+.skill-display{
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  
+}
+#skills1{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
+  
+}
+.skill1{
+  height:inherit;
+  width:55%;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 1px 1px 5px 2px #989882;
+  background-color:rgb(75, 75, 190);
+  
+}
 
-      <h1 class="section-heading mb75px">
+.javaskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color: white;
+ padding: 2px 0 2px 15px;
+   
+}
 
-        <span>
-          <i class="fa-solid fa-chalkboard-user"></i>
-        </span>
+#skills2{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
 
-        <span>
-          SKILLS
-        </span>
-      </h1>
-      <div class="skill-display">
+}
+.skill2{
+  height: inherit;
+  width: 85%;
+  border-radius: 20px 0px 0px 20px;
+  background-color:rgb(255, 136, 0);
+  box-shadow: 1px 1px 5px 2px #989882;
+  
+}
 
-        <div id="skills1">
-          <div class="skill1">
-            <div class="javaskill">
-              Java
-            </div>
-          </div>
-        </div>
+.htmlskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color: white;
+ padding: 2px 0 2px 15px;
+   
+}
 
-        <div id="skills2">
-          <div class="skill2">
-            <div class="htmlskill">
-              HTML
-            </div>
-          </div>
-        </div>
+#skills3{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
+  
+}
+.skill3{
+  height: inherit;
+  width: 75%;
+  border-radius: 20px 0px 0px 20px;
+  background-color:rgb(178, 121, 232);
+  box-shadow: 1px 1px 5px 2px #989882;
+  
+}
 
-        <div id="skills3">
-          <div class="skill3">
-            <div class="cssskill">
-              CSS
-            </div>
-          </div>
-        </div>
+.cssskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color: white;
+ padding: 2px 0 2px 15px;
+   
+}
 
-        <div id="skills4">
-          <div class="skill4">
-            <div class="javascriptskill">
-              Javascript
-            </div>
-          </div>
-        </div>
+#skills4{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
+  
+}
+.skill4{
+  height: inherit;
+  width: 75%;
+  border-radius: 20px 0px 0px 20px;
+  background-color:green;
+  box-shadow: 1px 1px 5px 2px #989882;
 
+}
 
-        <div id="skills5">
-          <div class="skill5">
-            <div class="nodejsskill">
-              NodeJs
-            </div>
-          </div>
-        </div>
+.javascriptskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color: white;
+ padding: 2px 0 2px 15px;
+   
+}
 
-        <div id="skills6">
-          <div class="skill6">
-            <div class="mogodbskill">
-              MongoDB
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+#skills5{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
+  
+}
+.skill5{
+  height: inherit;
+  width: 65%;
+  border-radius: 20px 0px 0px 20px;
+  background-color:rgb(120, 120, 238);
+  box-shadow: 1px 1px 5px 2px #989882;
+  
+}
 
+.nodejsskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color:white;
+ padding: 2px 0 2px 15px;
+   
+}
 
-    <section id="experience">
+#skills6{
+  height: 2.5rem;
+  width: 12rem;
+  border: solid;
+  border-radius: 20px 20px 20px 20px;
+  margin: 25px;
+  overflow: hidden;
+  
+}
+.skill6{
+  height: inherit;
+  width: 80%;
+  border-radius: 20px 0px 0px 20px;
+  background-color:rgb(178, 121, 232);
+  box-shadow: 1px 1px 5px 2px #989882;
+  
+}
 
-      <h1 id="heading-of-experience">
-        <span><i class="fa-solid fa-briefcase"></i></span>
-        <span>Work Experience</span>
-      </h1>
+.mogodbskill{
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 20px 20px 20px 20px;
+  font-size: 25px;
+ color: white;
+ padding: 2px 0 2px 15px;
+  
+}
+
+/* Now portfolio section start */
+
+#heading-portfolio{
+
+  color: blue;
+  font-size: 5vh;
+  padding: 40px 10px 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.portfolio-container{
+  box-sizing: border-box;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     padding: 0 50px;
+     margin-bottom: 20px;
+     justify-content: space-around;
       
-        <div class="experience-list">
-          <h3 class="experience-designation" id="dishtvimg">Customer Support Executive</h3>
-          <h4 class="experience-company-name"> Dishtv </h4>
-          <h5 class="experience-duration"> August 2022 - present</h5>
+}
 
-          <p class="experience-description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="experience-list">
-          <h3 class="experience-designation"> Designation </h3>
-          <h4 class="experience-company-name"> Company Name </h4>
-          <h5 class="experience-duration"> Month YYYY - Month YYYY </h5>
+.portfolio-image-container{
+    max-width: 250px;
+   overflow: hidden;
+   margin: 20px;
+   padding-left: 100px;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   
+}
 
-          <p class="experience-description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. </p>
-        </div>
-        <div class="experience-list">
-          <h3 class="experience-designation"> Designation </h3>
-          <h4 class="experience-company-name"> Company Name </h4>
-          <h5 class="experience-duration"> Month YYYY - Month YYYY </h5>
+.portfolio-image-container img {
+  width: 100%;
+  height: 100%;
 
-          <p class="experience-description"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to make a type specimen book. </p>
-        </div>
+}
+#portfolio{
+  height: 87vh;
+}
 
-        <div id="timeline-of-experience">
-          <a href=""><i class="fa-solid fa-plane-up" id="planeimg"></i> </a>
-        </div>
-      
-    </section>
+.portfolio-image-container img:hover {
+  box-shadow: 0 0 20px #74ADC8;
+}
+.portfolio-details{
+  transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+.portfolio-image-container:hover {
+  box-shadow: 0 0 20px #74ADC8;
+  
+}
+.portfolio-image-container:hover .portfolio-details {
+  background-color: #80808078;
+  color: white;
+}
 
-
-
-    <section id="education">
-      <h1 id="heading-of-experience">
-        <span><i class="fa-solid fa-graduation-cap"></i></span>
-        <span>Education</span>
-      </h1>
-
-      <div class="experience-list">
-        <h3 class="experience-designation"> Degree </h3>
-        <h4 class="experience-company-name"> Institute Name </h4>
-        <h5 class="experience-duration"> Month YYYY - Month YYYY </h5>
-
-        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-          unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-      </div>
-      <div class="experience-list">
-        <h3 class="experience-designation" id="sppuimg">BSC CS</h3>
-        <h4 class="experience-company-name">Rajgad dnyanpeeth's Anantrao Thopte College </h4>
-        <h5 class="experience-duration"> April 2021 - till now </h5>
-
-        <p class="experience-description text-align-justify">
-          Currently persuing my Bacherlor's degree in BSC CS from Rajgad dnyanpeeth's Anantrao Thopte College. It is
-          located in pune, Maharashtra. The institute is affliated to SPPU.
-        </p>
-
-      </div>
-
-      <div class="experience-list">
-
-        <h3 class="experience-designation" id="hscimg"> Secondary Education </h3>
-        <h4 class="experience-company-name"> Raja Raghunathrao Vidyalay </h4>
-        <h5 class="experience-duration"> Month YYYY - Month YYYY </h5>
-
-        <p class="experience-description text-align-justify">
-          Completed my secondary education from Raja Raghunathrao Vidyalay. The institute is located in pune,
-          Maharashtra. It is affliated to HSC board. </p>
-
-      </div>
-      <div class="experience-list">
-        <h3 class="experience-designation" id="sscimg"> Primary Education </h3>
-        <h4 class="experience-company-name"> New English School</h4>
-        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
-
-        <p class="experience-description text-align-justify">
-          Completed my primary education from New English School. The institute is located in pune, Maharashtra. It is
-          affliated to SSC board.
-        </p>
-
-      </div>
-      <div id="timeline-of-education">
-        <a href=""><i class="fa-sharp fa-solid fa-person-biking" id="bikeimg"></i></a>
-      </div>
-
-    </section>
+/* Contact Form */
 
 
 
 
-    <section id="portfolio">
-      <h1 id="heading-portfolio">
-        <span><i class="fas fa-th-list"></i></span>
-        <span> Portfolio</span>
-      </h1>
-
-      <div class="portfolio-container">
-        <a href="http://127.0.0.1:5500/mycart.html">
-          <div class="portfolio-image-container"><img
-              src=" https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png" alt="">
-            <div class="portfolio-details">
-              <p>This is my first project Here I build a simple Flipcart clone</p>
-            </div>
-          </div>
-        </a>
-
-        <div class="portfolio-image-container"><img
-            src=" https://ninjasfiles.s3.amazonaws.com/asset_0000000000000026_1550237353_project_2.jpeg" alt="">
-          <div class="portfolio-details">
-            <p> my simple blog</p>
-          </div>
-        </div>
-
-        <div class="portfolio-image-container"><img
-            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png" alt="">
-          <div class="portfolio-details">
-            <p> </p>
-          </div>
-        </div>
-
-        <div class="portfolio-image-container"><img
-            src=" https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png" alt="">
-          <div class="portfolio-details">
-            <p></p>
-          </div>
-        </div>
-
-        <div class="portfolio-image-container"><img
-            src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000029_1550237386_project.jpeg" alt="">
-          <div class="portfolio-details">
-            <p> </p>
-          </div>
-        </div>
-
-        <div class="portfolio-image-container"><img
-            src=" https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png" alt="">
-          <div class="portfolio-details">
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="contact">
-      <h1 class="contact-section-heading">
-        <span>
-          <i class="far fa-address-card"></i>
-        </span>
-        <span> Contact </span>
-      </h1>
-      <div id="contact-container">
-        <div id="contact-form-container">
-          <form id="contact-form">
-            <input id="input-name" name="name" type="text" placeholder="Your Name">
-            <input id="input-email" name="input-email" type="email" required placeholder="Your Email">
-            <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
-            
-            <button class="sub-btn" type="submit">SEND MESSAGE</button>
-        
-          </form>
-
-        </div>
-        <div id="section-heading-t1">
-
-          <h3> Get In touch </h3>
-          <p> Get in touch with via email or linkedin.</p>
-          <div id="t2">
-            <h3> My Address </h3>
-            <div class="my-details-info-container">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>pune, Maharashtra, India</span>
-            </div>  
-          </div>
-          <div class="my-details-info-container">
-            <i class="fas fa-mobile-alt"></i>
-            <span>8788243859</span>
-          </div>
-          <div class="my-details-info-container">
-            <i class="far fa-envelope"></i>
-            <span>nigadetanmay20@gmail.com</span>
-
-          </div>
-        </div>
-      </div>
-    </section>
+  #contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    font-weight: 700;
+    font-size:x-large;
     
-  </main>
+}
 
-</body>
+#contact h1,
+#contact h1 span {
+    color: white;
+}
 
-</html>
+
+#contact-form {
+  margin-left: 20%;
+}
+
+#contact-container {
+  display: flex;
+}
+
+#my-details-container {
+  width: 35%;
+  margin-left: 6%;
+}
+
+#my-details-container h3 {
+  color: white;
+  font-weight: 550;
+  font-size: 1.2rem;
+}
+
+#contact-form-container {
+  width: 50%;
+  margin-top: 10vh;
+  margin-right: 5vw;
+}
+
+#my-details-container p {
+  color: #d9dcdd;
+  font-size: 0.9rem;
+}
+
+.my-details-info-container {
+  margin-bottom: 20px;
+  color: #d9dcdd;
+  font-size: 1rem;
+}
+
+.my-details-info-container span {
+  margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+  color: white;
+}
+
+.my-details-icon {
+  width: 1rem;
+  height: 1rem;
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+  max-width: 90%;
+  margin: 15px;
+  padding: 4px 10px;
+  border: 0px solid transparent;
+  border-bottom: 2px solid white;
+  color: #d9dcdd;
+  background: transparent;
+  width: 90%;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+
+#contact-form button[type="submit"]{
+  background: transparent;
+  font-size: 0.95rem;
+  border: 2px solid white;
+  margin-top: 5%;
+  margin-left: 35%;
+  border-radius: 2px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.8em 0.8em 0.78em;
+  text-transform: uppercase;
+}
+
+#contact-form button:hover {
+  background: white;
+  color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+  font-size: 1.2rem;
+  margin: 40px 10px 10px;
+  padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#section-heading-t1{
+  margin-top: 10vh;
+  padding-bottom: 10px;
+  
+}
+#t2{
+  margin-top: 5vh;
+}
+
+/* Work experience */
+
+#heading-of-experience{
+  font-size: 2.4rem;
+  color: blue;
+  padding-top: 1rem;
+  margin-bottom: 10vh;
+}
+
+
+.experience-list{
+  height: 25%;
+  width: 30%;
+}
+
+.experience-list:nth-child(2n){
+  margin-right: 40vw;
+  
+}
+.experience-list:nth-child(2n+1){
+  margin-left: 40vw;
+}
+#experience{
+  height: 100vh;
+}
+#education{
+  height: 130vh;
+}
+.experience-list h3,h4,h5{
+     text-align: right;
+    margin: 5px;
+    font-size: larger;
+}
+.experience-list h3{
+  color: blue;
+}
+.experience-list h4{
+  color: orange;
+}
+
+#timeline-of-experience{
+  height: 60vh;
+  width: 0;
+  border:2px dotted rgb(84, 181, 213);
+  position: absolute;
+  margin-top: 25vh;
+}
+#planeimg{
+  transform: rotate(180deg);
+  font-size:xx-large;
+  position: sticky;
+  top:25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ #sscimg::before{
+  content: '';
+  display: inline-block;
+  height: 67px;
+  width: 67px;
+  background-size: contain;
+  background-image: url(hsc.jpg);
+  border-radius: 50%;
+  position:absolute;
+  right: 40vw;
+}
+#hscimg::before{
+  content: '';
+  display: inline-block;
+  height: 67px;
+  width: 67px;
+  background-size: contain;
+  background-image: url(hsc.jpg);
+  border-radius: 50%;
+  position:absolute;
+  right: 80vw;
+}
+#sppuimg::before{
+  content: '';
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  background-size: contain;
+  background-image: url(sppuimg.webp);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  position:absolute;
+  right: 41vw;
+}
+#dishtvimg::before{
+  content: '';
+  display: inline-block;
+  height: 80px;
+  width: 100px;
+  background-size: contain;
+  background-image: url(distvimg.png);
+  display: flex;
+  position: absolute;
+  right: 78vw;
+  background-repeat: no-repeat;
+  
+}
+
+#timeline-of-education{
+  height: 83vh;
+  width: 0;
+  border:2px dotted rgb(84, 181, 213);
+  position: absolute;
+  margin-top: 25vh;
+}
+
+#bikeimg{
+  rotate: 90deg;
+  font-size:xx-large;
+  position: sticky;
+  top:25vh;
+  right: 5px;
+}
+
+@media only screen and (max-width:1270px) {
+  #portfolio{
+
+      height: auto;
+  }
+  #Skill{
+    height: auto;
+  }
+}
+@media only screen and (max-width:666px) {
+ #Skill{
+  height: auto;
+ }
+
+}
+
+@media only  screen  and (max-width:640px) {
+#education{
+  height: auto;
+}
+#experience{
+  height: auto;
+}
+}
+
+@media only  screen  and (max-width:560px) {
+      #timeline-of-experience{
+        left: 5%;
+      }
+      #timeline-of-education{
+        left: 5%;
+      }
+       
+      .experience-list{
+        height: 80%;
+        width: 80%;
+      }
+      .experience-list:nth-child(2n){
+        margin-left: 48vw;
+        margin-bottom: 10vh;
+      }
+      .experience-list:nth-child(2n+1){
+        margin-right: 30vw;
+        margin-bottom: 10vh;
+      }
+      #dishtvimg::before{
+        content: '';
+        display: inline-block;
+        height: 80px;
+        width: 100px;
+        background-size: contain;
+        background-image: url(distvimg.png);
+        display: flex;
+        position: absolute;
+        right: 70vw;
+        background-repeat: no-repeat;
+        
+      }
+      #sppuimg::before{
+        content: '';
+        display: inline-block;
+        height: 65px;
+        width: 65px;
+        background-size: contain;
+        background-image: url(sppuimg.webp);
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        position:absolute;
+        right: 75vw;
+      }
+      #sscimg::before{
+        content: '';
+        display: inline-block;
+        height: 67px;
+        width: 67px;
+        background-size: contain;
+        background-image: url(hsc.jpg);
+        border-radius: 50%;
+        position:absolute;
+        right: 75vw;
+      }
+      #hscimg::before{
+        content: '';
+        display: inline-block;
+        height: 67px;
+        width: 67px;
+        background-size: contain;
+        background-image: url(hsc.jpg);
+        border-radius: 50%;
+        position:absolute;
+        right: 75vw;
+      }
+}
+
+@media only  screen  and (max-width:352px) {
+  #heading-of-experience{
+    font-size: 7vw;
+    color: blue;
+    padding-top: 1rem;
+    margin-bottom: 10vh;
+  }
+  
+}
