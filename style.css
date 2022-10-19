@@ -918,3 +918,11 @@ button:focus {
   
 }
   }
+
+  @media only screen and (max-width: 388px){
+        
+    .get-in-touch h4{
+      margin-right: 62vw;
+      margin-bottom: 2vh;
+   }
+  }
