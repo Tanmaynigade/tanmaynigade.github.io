@@ -514,8 +514,8 @@ button:focus {
   margin-top: 5vh;
 }
 
-#contact{
-  height: auto;
+#contact {
+  height: 94vh;
 }
 .social-icon ul li{
   list-style: none;
@@ -875,4 +875,10 @@ button:focus {
 
     
 }
+  @media only screen and (max-width: 620px) {
 
+    #contact {
+      height: auto;
+    }
+
+  }
