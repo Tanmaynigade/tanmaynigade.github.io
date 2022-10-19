@@ -856,3 +856,23 @@ button:focus {
 
 }
 
+@media only screen and (max-width: 540px) {
+  
+  #timeline-of-experience {
+    height: 88vh;
+    width: 0;
+    border: 2px dotted rgb(84, 181, 213);
+    position: absolute;
+    margin-top: 25vh;
+}
+#timeline-of-education {
+  height: 124vh;
+  width: 0;
+  border: 2px dotted rgb(84, 181, 213);
+  position: absolute;
+  margin-top: 25vh;
+}
+
+    
+}
+
