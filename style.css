@@ -406,6 +406,7 @@ section:nth-child(2n+1){
 .get-in-touch h4{
    margin-right: 13vw;
    margin-bottom: 2vh;
+   font-size: 5vw;
 }
 .get-in-touch p{     
   margin-bottom: 2vh;
@@ -919,10 +920,5 @@ button:focus {
 }
   }
 
-  @media only screen and (max-width: 388px){
-        
-    .get-in-touch h4{
-      margin-right: 62vw;
-      margin-bottom: 2vh;
-   }
-  }
+  
+ 
