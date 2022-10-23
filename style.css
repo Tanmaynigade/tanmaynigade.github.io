@@ -152,23 +152,12 @@ section:nth-child(2n+1){
 }
 .skill1{
   height:inherit;
-  width:0%;
+  width:55%;
   border-radius: 20px 0px 0px 20px;
   box-shadow: 1px 1px 5px 2px #989882;
   background-color:rgb(75, 75, 190);
-  animation: all 1s ease-in-out forwards; 
-  
+    
 }
-
-@keyframes all{
-        0%{
-     width:0%;
-        }
-
-        100%{
-          width:55%;
-        }
-   }
 
 .javaskill{
   height: 2.5rem;
@@ -191,23 +180,12 @@ section:nth-child(2n+1){
 }
 .skill2{
   height: inherit;
-  width: 0%;
+  width: 85%;
   border-radius: 20px 0px 0px 20px;
   background-color:rgb(255, 136, 0);
   box-shadow: 1px 1px 5px 2px #989882;
-   animation: all 1s ease-in-out forwards; 
-  
+    
 }
-
-@keyframes all{
-        0%{
-     width:0%;
-        }
-
-        100%{
-          width:85%;
-        }
-   }
 
 .htmlskill{
   height: 2.5rem;
@@ -230,23 +208,11 @@ section:nth-child(2n+1){
 }
 .skill3{
   height: inherit;
-  width: 0%;
+  width: 75%;
   border-radius: 20px 0px 0px 20px;
   background-color:rgb(178, 121, 232);
   box-shadow: 1px 1px 5px 2px #989882;
-   animation: all 1s ease-in-out forwards; 
-  
 }
-
-@keyframes all{
-        0%{
-     width:0%;
-        }
-
-        100%{
-          width:75%;
-        }
-   }
 
 .cssskill{
   height: 2.5rem;
@@ -269,23 +235,14 @@ section:nth-child(2n+1){
 }
 .skill4{
   height: inherit;
-  width: 0%;
+  width: 75%;
   border-radius: 20px 0px 0px 20px;
   background-color:green;
   box-shadow: 1px 1px 5px 2px #989882;
-   animation: all 1s ease-in-out forwards; 
+   
   
 }
 
-@keyframes all{
-        0%{
-     width:0%;
-        }
-
-        100%{
-          width:75%;
-        }
-   }
 
 .javascriptskill{
   height: 2.5rem;
@@ -308,23 +265,14 @@ section:nth-child(2n+1){
 }
 .skill5{
   height: inherit;
-  width: 0%;
+  width: 65%;
   border-radius: 20px 0px 0px 20px;
   background-color:rgb(120, 120, 238);
   box-shadow: 1px 1px 5px 2px #989882;
-   animation: all 1s ease-in-out forwards; 
+   
   
 }
 
-@keyframes all{
-        0%{
-     width:0%;
-        }
-
-        100%{
-          width:65%;
-        }
-   }
 
 .nodejsskill{
   height: 2.5rem;
@@ -347,23 +295,14 @@ section:nth-child(2n+1){
 }
 .skill6{
   height: inherit;
-  width: 0%;
+  width: 80%;
   border-radius: 20px 0px 0px 20px;
   background-color:rgb(178, 121, 232);
   box-shadow: 1px 1px 5px 2px #989882;
-   animation: all 1s ease-in-out forwards; 
-  
+   
 }
 
-@keyframes all{
-        0%{
-     width:0%;
-        }
 
-        100%{
-          width:80%;
-        }
-   }
 .mogodbskill{
   height: 2.5rem;
   width: 12rem;
